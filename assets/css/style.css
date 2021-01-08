@@ -1,0 +1,91 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+
+.bg-nav{
+    background-color:rgb(234, 240, 255);
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.border{
+    border: grey solid 1px;
+}
+
+.navlist{
+    list-style: none;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 0;
+}
+
+.textdeco{
+    text-decoration:none;
+    padding: 15px;
+    margin:auto;
+    color: black;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+/* BANNER */
+
+.bg-banner{
+    background-image: url("../../img/banner-bg.jpg");
+    background-color: transparent;
+    height: 580px;
+    
+}
+
+.banner{
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.space{
+    margin: 0;
+    padding: 5px 0 5px 0;
+    
+
+}
+
+.bts{
+    background-color: #F2745F;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* WE COOK DELECIOUS */
+
+.wck{
+    border: black solid 1px;
+    background-color:#F2745F;
+    color: white;
+    text-align: center;
+    height: 60px;
+    width: 40vw;
+}
+
+.number{
+    background-color: #F3826F;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    height: 150px;
+}
