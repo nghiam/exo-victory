@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Victory</title>
 </head>
@@ -72,12 +73,12 @@
             <img src="./img/cook_01.jpg" class="img" alt="">
         </div>
 
-        <div>
+        <div class="wck">
             <h2>we cook delecious</h2>
             <span>you can call us on:</span>
             <span>+ 1234 567 8910</span>
             <span>or</span>
-            <button>order now</button>
+            <button class="bts2">order now</button>
         </div>
 
         <div>
@@ -87,26 +88,27 @@
     </section>
 
 
-    <div>
-
-        <div>
-            <img src="./img/cook_breakfast.png" alt="">
-            <p>Breakfast</p>
-        </div>
-    
-        <div>
-            <img src="./img/cook_lunch.png" alt="">
-            <p>Lunch</p>
-        </div>
-    
-        <div>
-            <img src="./img/cook_dinner.png" alt="">
-            <p>Dinner</p>
-        </div>
-    
-        <div>
-            <img src="./img/cook_dessert.png" alt="">
-            <p>Desserts</p>
+    <div class="container d-flex justify-content-around mt-5 mb-5">
+        <div class="row">
+            <div class="col-3">
+                <img src="./img/cook_breakfast.png" class="img-fluid"alt="">
+                <p class="text-center">Breakfast</p>
+            </div>
+        
+            <div class="col-3">
+                <img src="./img/cook_lunch.png" class="img-fluid" alt="">
+                <p class="text-center">Lunch</p>
+            </div>
+        
+            <div class="col-3">
+                <img src="./img/cook_dinner.png" class="img-fluid"alt="">
+                <p class="text-center">Dinner</p>
+            </div>
+        
+            <div class="col-3">
+                <img src="./img/cook_dessert.png" class="img-fluid"alt="">
+                <p class="text-center">Desserts</p>
+            </div>
         </div>
 
     </div>
@@ -115,7 +117,7 @@
     <!-- BOOK YOUR TABLE NOW -->
 
 
-    <section>
+    <section class="bg-book book">
 
         <div>
             <div>
@@ -127,39 +129,60 @@
             </div>
 
         </div>
-
+        
+    </section>
+    <section class="bg-orange">
         <div>
             <h3>get application for your phone</h3>
-            <button>download now</button>
+            <button class="bts-dl">download now</button>
         </div>
+
     </section>
 
 
         <!-- WEEKLY FEATURED FOOD -->
 
+        
     <section>
+            
+            <h2 class="bg-title uppercase">weekly featured food</h2>
+        <div class="container d-flex justify-content-center">
 
-        <h2>weekly featured food</h2>
+            <div class="row">
+                
+                
+                <div class="col-4 bg-grey">
+                    <h2>Breakfast</h2>
+                    <img src="./img/breakfast_item.jpg" alt="">
+                    <div class="bg-white">
+                        <h3>Kale Chips Art Party</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo est fugiat placeat minus facilis!</p>
+                    </div>
+                </div>
+        
+                <div class="col-4 bg-grey">
+                    <h2>Lunch</h2>
+                    <img src="./img/lunch_item.jpg" alt="">
+                    <div class="bg-white">
+                        <h3>Taiyaki Gastro Tousled</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error sequi id ut similique sunt facere?</p>
+                    </div>
+                </div>
+        
+                <div class="col-4 bg-grey">
+                    <h2>Dinner</h2>
+                    <img src="./img/dinner_item.jpg" alt="">
+                    <div class="bg-white">
+                        <h3>Batch Squid Jean Shorts</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum cum similique laborum temporibus exercitationem quo?</p>
+                    </div>
+                </div>
 
-        <div>
-            <h2>Breakfast</h2>
-            <img src="./img/breakfast_item.jpg" alt="">
-            <h3>Kale Chips Art Party</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quo est fugiat placeat minus facilis!</p>
-        </div>
+            </div>
 
-        <div>
-            <h2>Lunch</h2>
-            <img src="./img/lunch_item.jpg" alt="">
-            <h3>Taiyaki Gastro Tousled</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error sequi id ut similique sunt facere?</p>
-        </div>
 
-        <div>
-            <h2>Dinner</h2>
-            <img src="./img/dinner_item.jpg" alt="">
-            <h3>Batch Squid Jean Shorts</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum cum similique laborum temporibus exercitationem quo?</p>
+
+
         </div>
 
     </section>
@@ -170,39 +193,46 @@
 
     <section>
 
-        <h3>our last blog</h3>
-        <div>
-            <div>
-                <img src="./img/blog_post_01.jpg" alt="">
-                <h4>Strumptown Tofu Schlitz</h4>
-                <p>Brandin / Admin</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
-                <p>continue reading</p>
-            </div>
-            <div>
-                <img src="./img/blog_post_02.jpg" alt="">
-                <h4>Succulents Hashtag Folk</h4>
-                <p>Brandin / Admin</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
-                <p>continue reading</p>
+        <h3 class="bg-title uppercase">our last blog</h3>
+
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/blog_post_01.jpg" alt="">
+                    <h4>Strumptown Tofu Schlitz</h4>
+                    <p>Brandin / Admin</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
+                    <p>continue reading</p>
+                </div>
+
+                <div class="col-6">
+                    <img src="./img/blog_post_02.jpg" alt="">
+                    <h4>Succulents Hashtag Folk</h4>
+                    <p>Brandin / Admin</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
+                    <p>continue reading</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img src="./img/blog_post_03.jpg" alt="">
-                <h4>Knaus Sriracha Pinterest</h4>
-                <p>Brandin / Admin</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
-                <p>continue reading</p>
-            </div>
-    
-            <div>
-                <img src="./img/blog_post_04.jpg" alt="">
-                <h4>Crucifix Selvage Coat</h4>
-                <p>Brandin / Admin</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
-                <p>continue reading</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/blog_post_03.jpg" alt="">
+                    <h4>Knaus Sriracha Pinterest</h4>
+                    <p>Brandin / Admin</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
+                    <p>continue reading</p>
+                </div>
+        
+                <div class="col-6">
+                    <img src="./img/blog_post_04.jpg" alt="">
+                    <h4>Crucifix Selvage Coat</h4>
+                    <p>Brandin / Admin</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam itaque vel doloremque, velit placeat minima, ipsam repellendus error natus, nemo facere?</p>
+                    <p>continue reading</p>
+                </div>
             </div>
         </div>
 
@@ -215,28 +245,33 @@
 
     <section>
 
-        <div>
-            <h2>signup for our newsletters</h2>
-        </div>
-        <div>
-            <input type="text">
-            <button>send message</button>
-        </div>
-
-        <div>
-            <p>Copyright c 2020 Template</p>
-        </div>
-
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <div class="bg-footer">
+            <div>
+                <h2 class="color-wh uppercase">signup for our newsletters</h2>
+            </div>
+    
+            <div>
+                <input type="text">
+                <button>send message</button>
+            </div>
         </div>
 
-        <div>
-            <p>Design:TemplateMo</p>
+        <div class="bg-footer2">
+            <div class="color-wh">
+                <p>Copyright c 2020 Template</p>
+            </div>
+    
+            <div>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+    
+            <div class="color-wh">
+                <p>Design:TemplateMo</p>
+            </div>
         </div>
     </section>
 

@@ -71,10 +71,11 @@ body{
 .wck{
     border: black solid 1px;
     background-color:#F2745F;
+    padding: 50px;
+    height: 250px;
     color: white;
     text-align: center;
-    height: 60px;
-    width: 40vw;
+    
 }
 
 .number{
@@ -82,10 +83,83 @@ body{
 }
 
 .container{
+    margin: 20px;
     display: flex;
     justify-content: center;
 }
 
 .img{
-    height: 150px;
+    height: 170px;
+}
+
+.bts2{
+    background-color: white;
+    color: #F3826F;
+}
+
+
+/* BOOK YOUR TABLE NOW */
+
+.bg-book{
+    background-image: url("../../img/book-bg.jpg");
+    background-color: transparent;
+    height: 580px;
+}
+
+.book{
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.bg-orange{
+    border: black solid 1px;
+    background-color: #F3826F;
+    color:white;
+    text-align:center;
+    padding: 30px;
+}
+
+.bts-dl{
+    color:white;
+    background-color: #F3826F;
+}
+
+
+/* WEEKLY FEATURED FOOD */
+.bg-title{
+    border: black solid 1px;
+    text-align:center;
+    padding: 50px;
+}
+
+.bg-white{
+    border: black solid 1px;
+    background-color: white;
+    text-align:center;
+    padding: 10px;
+}
+
+.bg-grey{
+    background-color: #F2F6FF;
+
+}
+
+
+/* FOOTER */
+
+.bg-footer{
+    background-image: url(../../img/signup-bg.jpg);
+    text-align: center;
+    height:200px;
+}
+
+.color-wh{
+    color: white;
+}
+
+.bg-footer2{
+    background-color: #363E50;
+    text-align: center;
 }
