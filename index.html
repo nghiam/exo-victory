@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -69,20 +71,22 @@
 
     <section class="container">
 
-        <div>
-            <img src="./img/cook_01.jpg" class="img" alt="">
-        </div>
-
-        <div class="wck">
-            <h2>we cook delecious</h2>
-            <span>you can call us on:</span>
-            <span>+ 1234 567 8910</span>
-            <span>or</span>
-            <button class="bts2">order now</button>
-        </div>
-
-        <div>
-            <img src="./img/cook_02.jpg" class="img" alt="">
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/cook_01.jpg" class="img" alt="">
+            </div>
+    
+            <div class="wck col-4">
+                <h2>we cook delecious</h2>
+                <span>you can call us on:</span>
+                <span>+ 1234 567 8910</span>
+                <span>or</span>
+                <button class="bts2">order now</button>
+            </div>
+    
+            <div class="col-4">
+                <img src="./img/cook_02.jpg" class="img" alt="">
+            </div>
         </div>
 
     </section>
@@ -153,6 +157,7 @@
                 
                 <div class="col-4 bg-grey">
                     <h2>Breakfast</h2>
+                    <p class="border"></p>
                     <img src="./img/breakfast_item.jpg" alt="">
                     <div class="bg-white">
                         <h3>Kale Chips Art Party</h3>
@@ -162,6 +167,7 @@
         
                 <div class="col-4 bg-grey">
                     <h2>Lunch</h2>
+                    <p class="border"></p>
                     <img src="./img/lunch_item.jpg" alt="">
                     <div class="bg-white">
                         <h3>Taiyaki Gastro Tousled</h3>
@@ -171,6 +177,7 @@
         
                 <div class="col-4 bg-grey">
                     <h2>Dinner</h2>
+                    <p class="border"></p>
                     <img src="./img/dinner_item.jpg" alt="">
                     <div class="bg-white">
                         <h3>Batch Squid Jean Shorts</h3>
@@ -179,9 +186,6 @@
                 </div>
 
             </div>
-
-
-
 
         </div>
 
@@ -238,8 +242,6 @@
 
     </section>
 
-
-
         <!-- FOOTER -->
 
 
@@ -247,36 +249,40 @@
 
         <div class="bg-footer">
             <div>
-                <h2 class="color-wh uppercase">signup for our newsletters</h2>
+                <h2 class="color-wh uppercase txt-footer">signup for our newsletters</h2>
             </div>
     
-            <div>
+            <div class="txt-footer">
                 <input type="text">
-                <button>send message</button>
+                <button >send message</button>
             </div>
         </div>
 
-        <div class="bg-footer2">
-            <div class="color-wh">
-                <p>Copyright c 2020 Template</p>
-            </div>
-    
-            <div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-    
-            <div class="color-wh">
-                <p>Design:TemplateMo</p>
-            </div>
-        </div>
     </section>
+    
+    <section class="footer2 bg-footer2">
 
+        <div class="container d-flex align-items-center">
+            <div class="row">
+                <div class="color-wh col-4 d-flex justify-content-start">
+                    <p>Copyright c 2020 Template</p>
+                </div>
+                
+                <div class="col-4">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fas fa-wifi"></i></a>
+                    <a href=""><i class="fas fa-basketball-ball"></i></a>
+                </div>
+        
+                <div class="color-wh col-4">
+                    <p>Design:TemplateMo</p>
+                </div>
+            </div>
+        </div>
 
-
+    </section>
 
 </body>
 </html>
